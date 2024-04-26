@@ -1,0 +1,43 @@
+@import "../../styles/Variables";
+
+.nav {
+  z-index: 100;
+  position: fixed;
+  bottom: 25px;
+  left: calc(50% - ($navWidth / 2));
+  width: $navWidth;
+  height: 50px;
+
+  ul {
+    height: 50px;
+    z-index: 101;
+    display: flex;
+    justify-content: space-around;
+    background: $blackColor;
+    border: 1px solid $blackColor;
+    border-radius: 15px;
+    align-items: center;
+
+    li {
+      cursor: pointer;
+      z-index: 103;
+      padding: 10px;
+      list-style: none;
+      font-size: 1.2em;
+
+      a {
+
+      }
+    }
+  }
+}
+
+.navSelection {
+  height: 40px;
+  background: $blueColor;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 102;
+  top: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+}
