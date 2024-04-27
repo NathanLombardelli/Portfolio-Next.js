@@ -38,6 +38,7 @@ export default function Home() {
 
             <section className={"mainSection"}>
                 <Spline scene="https://prod.spline.design/dI-gsDDjICl92avH/scene.splinecode"/>
+                
                 <h1 style={{
                     position: 'fixed',
                     top: `calc(50vh - 250px + ${offsetY / 2}px)`,

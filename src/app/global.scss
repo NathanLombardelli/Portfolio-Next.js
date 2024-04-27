@@ -29,24 +29,32 @@ h1 {
 }
 
 section {
+  position: relative;
+  z-index: 1;
   height: 100vh;
+  background: $blackColor;
 }
 
 .mainSection {
+  caret-color: $blueColor;
+  cursor: url("../../public/pointer-arrow-icon.svg"), default;
+
   h1 {
-    z-index: 2;
+    z-index: 1;
     position: fixed;
     top: calc(50vh - (500px / 2));
     left: calc(30% - (500px / 2));
     font-size: 75px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
   }
 
   h2 {
-    z-index: 2;
+    z-index: 1;
     position: fixed;
     top: calc(50vh - (300px / 2));
     left: calc(30% - (400px / 2));
     font-size: 75px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
   }
 
   .desc {
@@ -57,6 +65,7 @@ section {
     left: calc(50% - (1000px / 2));
     font-size: 30px;
     text-align: center;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
   }
 
   .location {
@@ -64,6 +73,7 @@ section {
     top: 50px;
     right: 200px;
     font-size: 20px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
   }
 
   .dispo {
@@ -74,6 +84,7 @@ section {
     border: 1px solid $fontColor;
     border-radius: 50px;
     padding: 10px 10px 10px 35px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
 
     span:before {
       position: absolute;
@@ -105,8 +116,17 @@ section {
 }
 
 .compSection {
-  z-index: 99;
-  position: relative;
-  background: red;
+  background: linear-gradient(180deg, rgba(0, 238, 255, 1) 0%, rgba(56, 142, 149, 1) 0%, rgba(18, 121, 133, 1) 14%, rgba(31, 36, 45, 1) 100%);
+}
+
+.expSection {
+
+}
+
+.cvSection {
+
+}
+
+.contactSection {
 
 }
