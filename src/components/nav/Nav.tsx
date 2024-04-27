@@ -49,10 +49,10 @@ export default function Nav() {
     return (
         <nav ref={navRef} className={'nav'}>
             <ul>
-                <li ref={comp}><a>Compétances</a></li>
-                <li ref={exp}><a>Expérience</a></li>
-                <li ref={cv}><a>CV</a></li>
-                <li ref={con}><a>Contact</a></li>
+                <li ref={comp}><a href={'#comp'}>Compétances</a></li>
+                <li ref={exp}><a href={'#exp'}>Expérience</a></li>
+                <li ref={cv}><a href={'#cv'}>CV</a></li>
+                <li ref={con}><a href={'#contact'}>Contact</a></li>
             </ul>
             <div style={{
                 width: `${selectionWidth}px`,
