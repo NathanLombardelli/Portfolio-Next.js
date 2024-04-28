@@ -1,8 +1,27 @@
 "use client"
 import './global.scss';
+
 import Spline from '@splinetool/react-spline';
+
 import Nav from "../components/nav/Nav";
+
 import {useEffect, useState} from "react";
+
+import {Swiper, SwiperSlide} from 'swiper/react';
+// import required modules
+import {Autoplay} from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/scss';
+
+import {HoloCard} from "bereact-ui/Card";
+import 'bereact-ui/style.css';
+
+import Image from "next/image";
+
+import csharpCardImage from '../img/csharp-card.jpg';
+import htmlCardImage from '../img/html-card.jpg';
+import cssCardImage from '../img/css-card.jpg';
+import sqlCardImage from '../img/sql-card.jpg';
 
 
 export default function Home() {
@@ -32,13 +51,17 @@ export default function Home() {
 
     const scale = Math.max(0.8, 1 - (offsetY / window.innerHeight) * 0.2);
 
+    function handleCompChange(activeIndex: number) {
+        console.log(activeIndex);
+    }
+
     return (
         <main>
             <Nav/>
 
             <section className={"mainSection"}>
                 <Spline scene="https://prod.spline.design/dI-gsDDjICl92avH/scene.splinecode"/>
-                
+
                 <h1 style={{
                     position: 'fixed',
                     top: `calc(50vh - 250px + ${offsetY / 2}px)`,
@@ -63,6 +86,21 @@ export default function Home() {
 
 
             <section className={"compSection"} id={'comp'}>
+                <h2>Mes Compétences</h2>
+                <Swiper
+                    autoplay={true}
+                    centeredSlides={true}
+                    slidesPerView={2}
+                    onActiveIndexChange={(selected) => handleCompChange(selected.activeIndex)}
+                    modules={[Autoplay]}
+                >
+
+                    <SwiperSlide><HoloCard content={<Image width={200} height={200} src={htmlCardImage} alt={'img'}/>}/></SwiperSlide>
+                    <SwiperSlide><HoloCard
+                        content={<Image width={200} height={200} src={csharpCardImage} alt={'img'}/>}/></SwiperSlide>
+                    <SwiperSlide><HoloCard content={<Image width={200} height={200} src={cssCardImage} alt={'img'}/>}/></SwiperSlide>
+                    <SwiperSlide><HoloCard content={<Image width={200} height={200} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                </Swiper>
 
             </section>
 
