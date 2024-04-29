@@ -9,9 +9,11 @@ import {useEffect, useState} from "react";
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 // import required modules
-import {Autoplay} from 'swiper/modules';
+import {Autoplay, EffectCoverflow, Navigation, Pagination} from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/scss';
+import 'swiper/scss/pagination';
+import 'swiper/css/navigation';
 
 import {HoloCard} from "bereact-ui/Card";
 import 'bereact-ui/style.css';
@@ -28,7 +30,6 @@ export default function Home() {
 
     const [date, setDate] = useState<string>("");
     const [offsetY, setOffsetY] = useState(0);
-
     // Fonction pour gérer l'événement de scroll
 
     useEffect(() => {
@@ -87,20 +88,43 @@ export default function Home() {
 
             <section className={"compSection"} id={'comp'}>
                 <h2>Mes Compétences</h2>
-                <Swiper
-                    autoplay={true}
-                    centeredSlides={true}
-                    slidesPerView={2}
-                    onActiveIndexChange={(selected) => handleCompChange(selected.activeIndex)}
-                    modules={[Autoplay]}
-                >
+                <div style={{width: '50%'}}>
+                    <Swiper
+                        autoplay={false}
+                        navigation
+                        effect="coverflow"
+                        pagination={{
+                            el: "#containerForBullets",
+                            type: "bullets",
+                            bulletClass: "swiper-custom-bullet",
+                            bulletActiveClass: "swiper-custom-bullet-active",
+                            clickable: true,
+                        }}
+                        scrollbar={{draggable: true}}
+                        coverflowEffect={{
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: false
+                        }}
+                        centeredSlides
+                        slidesPerView={3}
+                        onActiveIndexChange={(selected) => handleCompChange(selected.activeIndex)}
+                        modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
+                    >
 
-                    <SwiperSlide><HoloCard content={<Image width={200} height={200} src={htmlCardImage} alt={'img'}/>}/></SwiperSlide>
-                    <SwiperSlide><HoloCard
-                        content={<Image width={200} height={200} src={csharpCardImage} alt={'img'}/>}/></SwiperSlide>
-                    <SwiperSlide><HoloCard content={<Image width={200} height={200} src={cssCardImage} alt={'img'}/>}/></SwiperSlide>
-                    <SwiperSlide><HoloCard content={<Image width={200} height={200} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
-                </Swiper>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={200} src={htmlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={200} src={csharpCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={200} src={cssCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={200} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                    </Swiper>
+                    <div id="containerForBullets"></div>
+                </div>
 
             </section>
 
