@@ -113,6 +113,7 @@ section {
 
   }
 
+
 }
 
 .compSection {
@@ -127,6 +128,31 @@ section {
     top: 50px;
     left: 50px;
     font-size: 35px;
+  }
+
+  .sliderContener {
+    width: 75%;
+
+    .textContenerComp {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+
+      .titleComp {
+        font-size: 25px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      .descComp {
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
   }
 
   .swiper-slide {
@@ -160,6 +186,32 @@ section {
     display: flex;
     justify-content: center;
     gap: 5px;
+  }
+
+  .fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  .fadeOut {
+    animation: fadeOut 0.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 
 }

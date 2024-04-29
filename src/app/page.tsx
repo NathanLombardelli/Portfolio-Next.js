@@ -24,12 +24,15 @@ import csharpCardImage from '../img/csharp-card.jpg';
 import htmlCardImage from '../img/html-card.jpg';
 import cssCardImage from '../img/css-card.jpg';
 import sqlCardImage from '../img/sql-card.jpg';
+import {comp, descComp} from "@/utils/constants";
 
 
 export default function Home() {
 
     const [date, setDate] = useState<string>("");
     const [offsetY, setOffsetY] = useState(0);
+    const [selectedComp, setSelectedComp] = useState(0);
+    const [showTextAnimation, setShowTextAnimation] = useState(false);
     // Fonction pour gérer l'événement de scroll
 
     useEffect(() => {
@@ -53,7 +56,13 @@ export default function Home() {
     const scale = Math.max(0.8, 1 - (offsetY / window.innerHeight) * 0.2);
 
     function handleCompChange(activeIndex: number) {
-        console.log(activeIndex);
+
+        setShowTextAnimation(true);
+
+        setTimeout(() => {
+            setShowTextAnimation(false);
+            setSelectedComp(activeIndex)
+        }, 500);
     }
 
     return (
@@ -88,7 +97,7 @@ export default function Home() {
 
             <section className={"compSection"} id={'comp'}>
                 <h2>Mes Compétences</h2>
-                <div style={{width: '75%'}}>
+                <div className={'sliderContener'}>
                     <Swiper
                         autoplay={false}
                         navigation
@@ -124,17 +133,9 @@ export default function Home() {
                             content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
                     </Swiper>
                     <div id="containerForBullets"></div>
-                    <div style={{
-                        width: '100%',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        flexDirection: 'column',
-                        textAlign: 'center',
-                        marginTop: 50
-                    }}>
-                        <p style={{fontSize: 25, marginBottom: 15, fontWeight: 'bold'}}>HTML</p>
-                        <p style={{fontSize: 20, marginBottom: 15}}>La base de tout projet web,base du SEO pour le
-                            référencement.</p>
+                    <div className={'textContenerComp'}>
+                        <p className={`titleComp ${showTextAnimation ? 'fadeOut' : 'fadeIn'}`}>{comp[selectedComp]}</p>
+                        <p className={`descComp ${showTextAnimation ? 'fadeOut' : 'fadeIn'}`}>{descComp[comp[selectedComp]]}</p>
                     </div>
 
                 </div>
