@@ -129,6 +129,11 @@ section {
     font-size: 35px;
   }
 
+  .swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
   .swiper-custom-bullet {
     height: 20px;
     width: 20px;
@@ -156,7 +161,6 @@ section {
     justify-content: center;
     gap: 5px;
   }
-
 
 }
 

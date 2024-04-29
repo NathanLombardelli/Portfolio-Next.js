@@ -88,7 +88,7 @@ export default function Home() {
 
             <section className={"compSection"} id={'comp'}>
                 <h2>Mes Compétences</h2>
-                <div style={{width: '50%'}}>
+                <div style={{width: '75%'}}>
                     <Swiper
                         autoplay={false}
                         navigation
@@ -108,22 +108,35 @@ export default function Home() {
                             modifier: 1,
                             slideShadows: false
                         }}
-                        centeredSlides
+                        centeredSlides={true}
                         slidesPerView={3}
                         onActiveIndexChange={(selected) => handleCompChange(selected.activeIndex)}
                         modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
                     >
 
+                        <SwiperSlide style={{justifyContent: 'center', display: 'flex', alignItems: 'center'}}><HoloCard
+                            content={<Image height={300} src={htmlCardImage} alt={'img'}/>}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={200} src={htmlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={csharpCardImage} alt={'img'}/>}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={200} src={csharpCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={cssCardImage} alt={'img'}/>}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={200} src={cssCardImage} alt={'img'}/>}/></SwiperSlide>
-                        <SwiperSlide><HoloCard
-                            content={<Image height={200} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
                     </Swiper>
                     <div id="containerForBullets"></div>
+                    <div style={{
+                        width: '100%',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        textAlign: 'center',
+                        marginTop: 50
+                    }}>
+                        <p style={{fontSize: 25, marginBottom: 15, fontWeight: 'bold'}}>HTML</p>
+                        <p style={{fontSize: 20, marginBottom: 15}}>La base de tout projet web,base du SEO pour le
+                            référencement.</p>
+                    </div>
+
                 </div>
 
             </section>
