@@ -131,8 +131,23 @@ export default function Home() {
                             content={<Image height={300} src={cssCardImage} alt={'img'}/>}/></SwiperSlide>
                         <SwiperSlide><HoloCard
                             content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                        <SwiperSlide><HoloCard
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
                     </Swiper>
                     <div id="containerForBullets"></div>
+
                     <div className={'textContenerComp'}>
                         <p className={`titleComp ${showTextAnimation ? 'fadeOut' : 'fadeIn'}`}>{comp[selectedComp]}</p>
                         <p className={`descComp ${showTextAnimation ? 'fadeOut' : 'fadeIn'}`}>{descComp[comp[selectedComp]]}</p>
