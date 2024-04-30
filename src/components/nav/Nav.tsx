@@ -9,12 +9,13 @@ export default function Nav() {
 
     const comp = useRef<HTMLLIElement>(null);
     const exp = useRef<HTMLLIElement>(null);
+    const pro = useRef<HTMLLIElement>(null);
     const cv = useRef<HTMLLIElement>(null);
     const con = useRef<HTMLLIElement>(null);
     const navRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const elements = [comp, exp, cv, con];
+        const elements = [comp, exp, pro, cv, con];
         elements.forEach(ref => {
             // @ts-ignore
             ref.current?.addEventListener('mouseover', () => updateSelection(ref.current));
@@ -51,6 +52,7 @@ export default function Nav() {
             <ul>
                 <li ref={comp}><a href={'#comp'}>Compétances</a></li>
                 <li ref={exp}><a href={'#exp'}>Expérience</a></li>
+                <li ref={pro}><a href={'#pro'}>Projets</a></li>
                 <li ref={cv}><a href={'#cv'}>CV</a></li>
                 <li ref={con}><a href={'#contact'}>Contact</a></li>
             </ul>

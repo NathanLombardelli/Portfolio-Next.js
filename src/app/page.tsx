@@ -50,6 +50,7 @@ import {comp, descComp} from "@/utils/constants";
 export default function Home() {
 
     const [date, setDate] = useState<string>("");
+    const [scale, setScale] = useState(1);
     const [offsetY, setOffsetY] = useState(0);
     const [selectedComp, setSelectedComp] = useState(0);
     const [showTextAnimation, setShowTextAnimation] = useState(false);
@@ -69,11 +70,29 @@ export default function Home() {
         };
     }, []);
 
+    useEffect(() => {
+        const handleResize = () => {
+            const newScale = Math.max(0.8, 1 - (window.scrollY / window.innerHeight) * 0.2);
+            setScale(newScale);
+        };
+
+        // Ajouter un écouteur d'événement pour redimensionner la fenêtre
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('scroll', handleResize);
+
+        // Appel initial pour définir l'échelle initiale
+        handleResize();
+
+        // Nettoyage de l'écouteur d'événement lorsque le composant est démonté
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('scroll', handleResize);
+        };
+    }, []);
+
     const handleScroll = () => {
         setOffsetY(window.scrollY);
     };
-
-    const scale = Math.max(0.8, 1 - (offsetY / window.innerHeight) * 0.2);
 
     function handleCompChange(activeIndex: number) {
 
@@ -187,6 +206,10 @@ export default function Home() {
             </section>
 
             <section className={"expSection"} id={'exp'}>
+
+            </section>
+
+            <section className={"proSection"} id={'pro'}>
 
             </section>
 
