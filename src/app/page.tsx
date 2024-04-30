@@ -163,35 +163,48 @@ export default function Home() {
                     >
 
                         <SwiperSlide style={{justifyContent: 'center', display: 'flex', alignItems: 'center'}}><HoloCard
-                            content={<Image height={300} src={htmlCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={htmlCardImage} alt={'html logo'}/>}
                             pattern={htmlPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={cssCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={cssCardImage} alt={'css logo'}/>}
                             pattern={cssPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={scssCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={scssCardImage} alt={'scss logo'}/>}
                             pattern={scssPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={jsCardImage} alt={'img'}/>} pattern={jsPatternImage.src}/></SwiperSlide>
+                            size={250}
+                            content={<Image src={jsCardImage} alt={'javascript logo'}/>}
+                            pattern={jsPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={tsCardImage} alt={'img'}/>} pattern={tsPatternImage.src}/></SwiperSlide>
+                            size={250}
+                            content={<Image src={tsCardImage} alt={'typescript logo'}/>}
+                            pattern={tsPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={reactCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={reactCardImage} alt={'react logo'}/>}
                             pattern={reactPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={reactNativeCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={reactNativeCardImage} alt={'react native logo'}/>}
                             pattern={reactNativePatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={sqlCardImage} alt={'sql logo'}/>}
                             pattern={sqlPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={gitCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={gitCardImage} alt={'github logo'}/>}
                             pattern={gitPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={nodeCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={nodeCardImage} alt={'node logo'}/>}
                             pattern={nodePatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={expCardImage} alt={'img'}/>}
+                            size={250}
+                            content={<Image src={expCardImage} alt={'express logo'}/>}
                             pattern={expPatternImage.src}/></SwiperSlide>
                     </Swiper>
                     <div id="containerForBullets"></div>
