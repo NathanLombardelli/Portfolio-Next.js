@@ -20,10 +20,30 @@ import 'bereact-ui/style.css';
 
 import Image from "next/image";
 
-import csharpCardImage from '../img/csharp-card.jpg';
+
 import htmlCardImage from '../img/html-card.jpg';
 import cssCardImage from '../img/css-card.jpg';
+import scssCardImage from '../img/scss-card.jpg';
+import jsCardImage from '../img/js-card.jpg';
+import tsCardImage from '../img/ts-card.jpg';
+import reactCardImage from '../img/react-card.jpg';
+import reactNativeCardImage from '../img/reactNative-card.jpg';
 import sqlCardImage from '../img/sql-card.jpg';
+import gitCardImage from '../img/git-card.jpg';
+import nodeCardImage from '../img/node-card.jpg';
+import expCardImage from '../img/exp-card.jpg';
+
+import htmlPatternImage from '../img/html-pattern.jpg';
+import cssPatternImage from '../img/css-pattern.jpg';
+import scssPatternImage from '../img/scss-pattern.jpg';
+import jsPatternImage from '../img/js-pattern.jpg';
+import tsPatternImage from '../img/ts-pattern.jpg';
+import reactPatternImage from '../img/react-pattern.jpg';
+import reactNativePatternImage from '../img/reactNative-pattern.jpg';
+import sqlPatternImage from '../img/sql-pattern.jpg';
+import gitPatternImage from '../img/git-pattern.jpg';
+import nodePatternImage from '../img/node-pattern.jpg';
+import expPatternImage from '../img/exp-pattern.jpg';
 import {comp, descComp} from "@/utils/constants";
 
 
@@ -76,7 +96,7 @@ export default function Home() {
                     position: 'fixed',
                     top: `calc(50vh - 250px + ${offsetY / 2}px)`,
                     transform: `translate3d(0px, ${-offsetY / 2}px, 0px) scale(${scale})`,
-                }}>Salut , je suis Nathan</h1>
+                }}>Bonjour, je m'appelle Nathan</h1>
                 <h2 style={{
                     position: 'fixed',
                     top: `calc(50vh - 150px + ${offsetY / 2}px)`,
@@ -124,27 +144,36 @@ export default function Home() {
                     >
 
                         <SwiperSlide style={{justifyContent: 'center', display: 'flex', alignItems: 'center'}}><HoloCard
-                            content={<Image height={300} src={htmlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={htmlCardImage} alt={'img'}/>}
+                            pattern={htmlPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={csharpCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={cssCardImage} alt={'img'}/>}
+                            pattern={cssPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={cssCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={scssCardImage} alt={'img'}/>}
+                            pattern={scssPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={jsCardImage} alt={'img'}/>} pattern={jsPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={tsCardImage} alt={'img'}/>} pattern={tsPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={reactCardImage} alt={'img'}/>}
+                            pattern={reactPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={reactNativeCardImage} alt={'img'}/>}
+                            pattern={reactNativePatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}
+                            pattern={sqlPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={gitCardImage} alt={'img'}/>}
+                            pattern={gitPatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={nodeCardImage} alt={'img'}/>}
+                            pattern={nodePatternImage.src}/></SwiperSlide>
                         <SwiperSlide><HoloCard
-                            content={<Image height={300} src={sqlCardImage} alt={'img'}/>}/></SwiperSlide>
+                            content={<Image height={300} src={expCardImage} alt={'img'}/>}
+                            pattern={expPatternImage.src}/></SwiperSlide>
                     </Swiper>
                     <div id="containerForBullets"></div>
 
