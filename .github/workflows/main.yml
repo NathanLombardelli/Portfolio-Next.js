@@ -22,7 +22,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.cluster027.hosting.ovh.net
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
+          username: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FTP_USER }}
           local-dir: ./dist/
           server-dir: ./www/
