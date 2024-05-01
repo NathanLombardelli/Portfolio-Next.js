@@ -22,9 +22,9 @@ h1 {
 }
 
 .spline {
-  z-index: 2;
-  height: 100vh;
-  position: absolute;
+  @media (max-width: 816px) {
+    display: none;
+  }
 }
 
 section {
@@ -93,7 +93,6 @@ section {
     }
     @media (max-width: 568px) {
       font-size: 35px;
-      left: calc(30% - (200px / 2));
     }
     @media (max-width: 511px) {
       font-size: 32px;
@@ -210,6 +209,7 @@ section {
 }
 
 .compSection {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,10 +221,22 @@ section {
     top: 50px;
     left: 50px;
     font-size: 40px;
+    @media (max-width: 402px) {
+      left: 10px;
+    }
+    @media (max-width: 362px) {
+      font-size: 35px;
+    }
   }
 
   .sliderContener {
     width: 75%;
+    @media (max-width: 655px) {
+      width: 90%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
 
     .textContenerComp {
       width: 100%;
@@ -233,6 +245,9 @@ section {
       flex-direction: column;
       text-align: center;
       margin-top: 50px;
+      @media (max-width: 655px) {
+        margin-top: 10px;
+      }
 
       .titleComp {
         font-size: 25px;

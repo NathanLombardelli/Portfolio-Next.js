@@ -110,7 +110,7 @@ export default function Home() {
 
             <section className={"mainSection"}>
                 {/* ToDO: IF MOBILE => REMOVE SLINE (LAG)*/}
-                <Spline scene="https://prod.spline.design/dI-gsDDjICl92avH/scene.splinecode"/>
+                <Spline className={'spline'} scene="https://prod.spline.design/dI-gsDDjICl92avH/scene.splinecode"/>
 
                 <h1 style={{
                     position: 'fixed',

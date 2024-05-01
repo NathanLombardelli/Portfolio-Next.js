@@ -51,7 +51,7 @@ export default function Nav() {
         <nav ref={navRef} className={'nav'}>
             <ul>
                 <li ref={comp}><a href={'#comp'}>Compétances</a></li>
-                <li ref={exp}><a href={'#exp'}>Expérience</a></li>
+                <li ref={exp}><a href={'#exp'}>Expériences</a></li>
                 <li ref={pro}><a href={'#pro'}>Projets</a></li>
                 <li ref={cv}><a href={'#cv'}>CV</a></li>
                 <li ref={con}><a href={'#contact'}>Contact</a></li>
