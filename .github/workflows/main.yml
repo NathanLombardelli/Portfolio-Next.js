@@ -24,5 +24,6 @@ jobs:
           server: ftp.cluster027.hosting.ovh.net
           username: ${{ secrets.FTP_PASSWORD }}
           password: ${{ secrets.FTP_USER }}
+          port: 21
           local-dir: ./dist/
           server-dir: ./www/
