@@ -209,7 +209,6 @@ section {
 }
 
 .compSection {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -330,8 +329,72 @@ section {
 }
 
 .cvSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    @media (max-width: 402px) {
+      left: 10px;
+    }
+    @media (max-width: 362px) {
+      font-size: 35px;
+    }
+  }
+
+  .imgCVContainer {
+    margin-top: -100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 500px) {
+      margin-top: -200px;
+    }
+
+    .cvImage {
+      transition: transform 0.3s ease; // Ajoute une transition fluide
+      object-fit: contain;
+      max-width: 100%;
+      width: 800px;
+    }
+  }
+
+
+  .downloadCVButton {
+    background-color: transparent;
+    display: flex;
+    border: 1px solid #0ef;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    justify-content: space-around;
+    width: 250px;
+    font-size: 20px;
+    margin-top: -100px;
+    @media (max-width: 580px) {
+      margin-top: -150px;
+    }
+    @media (max-width: 500px) {
+      margin-top: -200px;
+    }
+  }
+
+  &:hover {
+    ~ .cvImage {
+      width: 50px;
+    }
+  }
 
 }
+
 
 .contactSection {
 
