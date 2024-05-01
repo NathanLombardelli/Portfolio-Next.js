@@ -19,11 +19,10 @@ jobs:
           npm run build
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: airvzxf/ftp-deployment-action@latest
         with:
           server: ftp.cluster027.hosting.ovh.net
-          username: ${{ secrets.FTP_PASSWORD }}
+          user: ${{ secrets.FTP_PASSWORD }}
           password: ${{ secrets.FTP_USER }}
-          port: 21
           local-dir: ./dist/
-          server-dir: ./www/
+          remote_dir: ./www/
