@@ -35,7 +35,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
+        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
         year: "2019",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"
@@ -44,7 +44,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
+        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
         year: "2020",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"
@@ -53,7 +53,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
+        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
         year: "2021",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"
@@ -62,7 +62,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
+        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
         year: "2022",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"

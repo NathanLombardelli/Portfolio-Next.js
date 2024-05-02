@@ -407,28 +407,90 @@ section {
     align-items: center;
     width: 50%;
 
+    @media (max-width: 1457px) {
+      width: 75%;
+    }
+    @media (max-width: 1457px) {
+      margin-top: -50px;
+      margin-bottom: 150px;
+    }
+    @media (max-width: 1000px) {
+      width: 90%;
+    }
+    @media (max-width: 800px) {
+      margin-bottom: 100px;
+    }
+    @media (max-width: 600px) {
+      width: 95%;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+      margin-top: -100px;
+      margin-bottom: 100px;
+    }
+    @media (max-width: 407px) {
+      flex-direction: column;
+    }
+
+
     .imageInfos {
       width: 200px;
       height: 200px;
       margin-right: 50px;
+      @media (max-width: 800px) {
+        width: 150px;
+        height: 150px;
+        margin-right: 25px;
+      }
+      @media (max-width: 600px) {
+        width: 125px;
+        height: 125px;
+        margin-right: 20px;
+      }
+      @media (max-width: 500px) {
+        margin-left: 10px;
+      }
     }
 
     .textInfos {
       height: 200px;
 
+      @media (max-width: 407px) {
+        margin-left: 15px;
+      }
+
       .titleInfos {
         font-size: 40px;
         margin-bottom: 15px;
+        @media (max-width: 800px) {
+          font-size: 30px;
+        }
+        @media (max-width: 600px) {
+          font-size: 25px;
+        }
       }
 
       .dateInfos {
         color: $blueColor;
         margin-bottom: 15px;
+        @media (max-width: 800px) {
+          font-size: 18px;
+        }
+        @media (max-width: 600px) {
+          font-size: 15px;
+        }
       }
 
       .descInfos {
         font-size: 20px;
         margin-bottom: 15px;
+        @media (max-width: 800px) {
+          font-size: 18px;
+        }
+        @media (max-width: 600px) {
+          font-size: 15px;
+        }
       }
 
       .compInfos {
@@ -468,6 +530,9 @@ section {
 
   .sliderContener {
     width: 75%;
+    @media (max-width: 812px) {
+      width: 90%;
+    }
 
     .expCard {
       display: flex;
@@ -478,10 +543,43 @@ section {
       cursor: pointer;
       padding: 20px;
 
+      @media (max-width: 1640px) {
+        padding: 0;
+      }
+
       .titleExp {
         font-size: 25px;
         height: 100px;
         margin-bottom: 20px;
+        @media (max-width: 1640px) {
+          margin-bottom: 15px;
+          font-size: 22px;
+        }
+        @media (max-width: 1457px) {
+          margin-bottom: 5px;
+          font-size: 20px;
+        }
+        @media (max-width: 1349px) {
+          margin-bottom: -10px;
+          font-size: 18px;
+        }
+        @media (max-width: 1241px) {
+          margin-bottom: -30px;
+          font-size: 15px;
+        }
+        @media (max-width: 812px) {
+          margin-bottom: -30px;
+          font-size: 15px;
+        }
+        @media (max-width: 710px) {
+          margin-bottom: -40px;
+          font-size: 12px;
+        }
+        @media (max-width: 600px) {
+          margin-bottom: -30px;
+          font-size: 15px;
+        }
+
       }
 
       .lineContainer {
@@ -497,6 +595,10 @@ section {
           height: 25px;
           border-radius: 50%;
           background-color: #ccc;
+          @media (max-width: 812px) {
+            width: 15px;
+            height: 15px;
+          }
         }
 
         .circleSelected {
@@ -509,17 +611,38 @@ section {
           height: 3px;
           background-color: #ccc;
           transform-origin: center;
+          @media (max-width: 1640px) {
+            width: 245px;
+          }
+          @media (max-width: 1457px) {
+            width: 210px;
+          }
+          @media (max-width: 1241px) {
+            width: 187px;
+          }
+          @media (max-width: 812px) {
+            width: 147px;
+          }
+          @media (max-width: 600px) {
+            width: 180px;
+          }
         }
       }
 
       .year {
         font-size: 25px;
         color: rgba(255, 255, 255, 0.6);
+        @media (max-width: 500px) {
+          font-size: 20px;
+        }
       }
 
       .yearSelected {
         font-size: 25px;
         color: white;
+        @media (max-width: 500px) {
+          font-size: 20px;
+        }
       }
 
     }
