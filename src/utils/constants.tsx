@@ -32,7 +32,7 @@ interface expType {
 
 export const exp: expType[] = [
     {
-        title: "Étudiant Bachelier Conception d'application",
+        title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
         desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
@@ -41,7 +41,7 @@ export const exp: expType[] = [
         date: "Septembre 2019 - Janvier 2023"
     },
     {
-        title: "Étudiant Bachelier Conception d'application",
+        title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
         desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
@@ -50,7 +50,7 @@ export const exp: expType[] = [
         date: "Septembre 2019 - Janvier 2023"
     },
     {
-        title: "Étudiant Bachelier Conception d'application",
+        title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
         desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
@@ -59,7 +59,7 @@ export const exp: expType[] = [
         date: "Septembre 2019 - Janvier 2023"
     },
     {
-        title: "Étudiant Bachelier Conception d'application",
+        title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
         desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
@@ -68,7 +68,7 @@ export const exp: expType[] = [
         date: "Septembre 2019 - Janvier 2023"
     },
     {
-        title: "Étudiant Bachelier Conception d'application",
+        title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
         desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
