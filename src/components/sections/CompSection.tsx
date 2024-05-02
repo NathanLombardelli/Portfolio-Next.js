@@ -1,7 +1,10 @@
 "use client"
+
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, EffectCoverflow, Navigation, Pagination} from "swiper/modules";
+
 import {HoloCard} from "bereact-ui/Card";
+import 'bereact-ui/style.css';
 import Image from "next/image";
 
 import htmlCardImage from "@/img/html-card.jpg";

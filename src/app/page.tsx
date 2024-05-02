@@ -7,30 +7,15 @@ import Nav from "../components/nav/Nav";
 
 import {useEffect, useState} from "react";
 
-import {Swiper, SwiperSlide} from 'swiper/react';
-// import required modules
-import {Autoplay, EffectCoverflow, Navigation, Pagination} from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import 'swiper/css/navigation';
 
-import {HoloCard} from "bereact-ui/Card";
-import 'bereact-ui/style.css';
 
-import Image from "next/image";
-
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faDownload} from '@fortawesome/free-solid-svg-icons';
-
-
-import cvImage from '../img/cv.png';
-
-
-import {comp, descComp} from "@/utils/constants";
-import {IconButton} from "bereact-ui/Button";
 import {CompSection} from "@/components/sections/CompSection";
 import {CvSection} from "@/components/sections/CvSection";
+import {ExpSection} from "@/components/sections/ExpSection";
 
 
 export default function Home() {
@@ -113,9 +98,7 @@ export default function Home() {
             <CompSection/>
 
 
-            <section className={"expSection"} id={'exp'}>
-
-            </section>
+            <ExpSection/>
 
             <section className={"proSection"} id={'pro'}>
 

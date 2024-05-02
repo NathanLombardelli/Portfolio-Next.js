@@ -395,6 +395,107 @@ section {
 
 }
 
+.expSection {
+  border: 1px solid $blueColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .infoContainer {
+    margin-bottom: 100px;
+    display: flex;
+    width: 50%;
+
+    .imageInfos {
+      width: 150px;
+      height: 150px;
+      margin-right: 50px;
+    }
+
+    .textInfos {
+      height: 200px;
+
+      .titleInfos {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+
+      .dateInfos {
+        color: $blueColor;
+        margin-bottom: 15px;
+      }
+
+      .descInfos {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .compInfos {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+
+  }
+
+
+  .sliderContener {
+    width: 75%;
+
+    .expCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      padding: 20px;
+
+      .titleExp {
+        font-size: 25px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+
+      .lineContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .circle {
+          position: relative;
+          z-index: 10;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: #ccc;
+        }
+
+        .selected {
+          background-color: $blueColor;
+        }
+
+        .line {
+          position: absolute;
+          width: 280px;
+          height: 3px;
+          background-color: #ccc;
+          transform-origin: center;
+        }
+      }
+
+      .year {
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+    }
+
+
+  }
+}
 
 .contactSection {
 
