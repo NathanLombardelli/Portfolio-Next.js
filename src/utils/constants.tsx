@@ -68,15 +68,6 @@ export const exp: expType[] = [
         date: "Septembre 2019 - Janvier 2023"
     },
     {
-        title: "Étudiant Bachelier Développement d'application",
-        image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
-        location: "Helmo",
-        desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
-        year: "2023",
-        comp: "Java, C#, SQL",
-        date: "Septembre 2019 - Janvier 2023"
-    },
-    {
         title: "Formation Développeur Web",
         image: <Image src={becodeImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "BeCode",
@@ -89,7 +80,7 @@ export const exp: expType[] = [
         title: "Stagiaire Développeur Web Junior",
         image: <Image src={capsuleImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Capsule Corp",
-        desc: "Participation au développement de l'application HomieApp ( SAAS de gestion immobilière :https://www.homieapp.be )",
+        desc: "Participation au développement de l'application HomieApp ( SAAS de gestion immobilière : https://www.homieapp.be )",
         year: "2023",
         comp: "Ionic, React, Redux Toolkit, TypeScript, SQL, HTML,SCSS,...",
         date: "11 DÉCEMBRE 2023 - 04 MARS 2024"
@@ -98,7 +89,7 @@ export const exp: expType[] = [
         title: "Stagiaire Développeur Web Junior",
         image: <Image src={capsuleImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Capsule Corp",
-        desc: "Participation au développement de l'application HomieApp ( SAAS de gestion immobilière :https://www.homieapp.be ) Ionic, React, Redux Toolkit, TypeScript, SQL, HTML,SCSS...",
+        desc: "Participation au développement de l'application HomieApp ( SAAS de gestion immobilière : https://www.homieapp.be )",
         year: "2024",
         comp: "Ionic, React, Redux Toolkit, TypeScript, SQL, HTML,SCSS,...",
         date: "11 DÉCEMBRE 2023 - 04 MARS 2024"

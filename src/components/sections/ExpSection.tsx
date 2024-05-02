@@ -8,11 +8,17 @@ import {useState} from "react";
 export function ExpSection() {
 
     const [selectedExp, setSelectedExp] = useState(exp[0]);
+    const [showInfosAnimation, setShowInfosAnimation] = useState(false);
+
 
     function handleExpChange(activeIndex: number, clickedSlide: HTMLElement) {
 
-        setSelectedExp(exp[activeIndex]);
-        console.log(exp[activeIndex]);
+        setShowInfosAnimation(true);
+
+        setTimeout(() => {
+            setShowInfosAnimation(false);
+            setSelectedExp(exp[activeIndex]);
+        }, 500);
 
         // reset other styles
         const cicles = clickedSlide.querySelectorAll(".circle");
@@ -20,15 +26,21 @@ export function ExpSection() {
             el.className = "circle";
         });
 
+        const years = clickedSlide.querySelectorAll(".year");
+        years.forEach((year) => {
+            year.className = "year";
+        });
+
         // set selected styles
-        cicles.item(activeIndex).className = "circle selected";
+        cicles.item(activeIndex).className = "circle circleSelected";
+        years.item(activeIndex).className = "year yearSelected";
 
     }
 
     return (
         <section className={"expSection"} id={'exp'}>
 
-            <div className={'infoContainer'}>
+            <div className={`infoContainer ${showInfosAnimation ? 'fadeOut' : 'fadeIn'}`}>
                 {selectedExp.image}
                 <div className={'textInfos'}>
                     <p className={'titleInfos'}>{selectedExp.title}</p>
@@ -45,6 +57,7 @@ export function ExpSection() {
                     slideToClickedSlide
                     scrollbar={{draggable: true}}
                     centeredSlides={true}
+                    onInit={(selected) => handleExpChange(selected.activeIndex, selected.el)}
                     slidesPerView={5}
                     onActiveIndexChange={(selected) => handleExpChange(selected.activeIndex, selected.el)}
                     modules={[Autoplay, Navigation]}

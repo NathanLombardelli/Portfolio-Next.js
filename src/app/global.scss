@@ -396,7 +396,6 @@ section {
 }
 
 .expSection {
-  border: 1px solid $blueColor;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,11 +404,12 @@ section {
   .infoContainer {
     margin-bottom: 100px;
     display: flex;
+    align-items: center;
     width: 50%;
 
     .imageInfos {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       margin-right: 50px;
     }
 
@@ -437,6 +437,32 @@ section {
     }
 
 
+  }
+
+  .fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  .fadeOut {
+    animation: fadeOut 0.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 
 
@@ -473,7 +499,7 @@ section {
           background-color: #ccc;
         }
 
-        .selected {
+        .circleSelected {
           background-color: $blueColor;
         }
 
@@ -489,6 +515,11 @@ section {
       .year {
         font-size: 25px;
         color: rgba(255, 255, 255, 0.6);
+      }
+
+      .yearSelected {
+        font-size: 25px;
+        color: white;
       }
 
     }
