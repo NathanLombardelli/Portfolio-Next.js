@@ -16,6 +16,7 @@ import 'swiper/css/navigation';
 import {CompSection} from "@/components/sections/CompSection";
 import {CvSection} from "@/components/sections/CvSection";
 import {ExpSection} from "@/components/sections/ExpSection";
+import {ProSection} from "@/components/sections/ProSection";
 
 
 export default function Home() {
@@ -100,9 +101,7 @@ export default function Home() {
 
             <ExpSection/>
 
-            <section className={"proSection"} id={'pro'}>
-
-            </section>
+            <ProSection/>
 
             <CvSection/>
 

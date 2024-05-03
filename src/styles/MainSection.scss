@@ -1,0 +1,179 @@
+.mainSection {
+  caret-color: $blueColor;
+  cursor: url("../../public/pointer-arrow-icon.svg"), default;
+
+  h1 {
+    z-index: 1;
+    position: fixed;
+    top: calc(50vh - (500px / 2));
+    left: calc(30% - (500px / 2));
+    font-size: 75px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
+
+    @media (max-width: 1110px) {
+      font-size: 60px;
+    }
+    @media (max-width: 816px) {
+      font-size: 50px;
+      left: calc(30% - (400px / 2));
+    }
+    @media (max-width: 692px) {
+      font-size: 40px;
+      left: calc(30% - (300px / 2));
+    }
+    @media (max-width: 568px) {
+      font-size: 36px;
+      left: calc(30% - (270px / 2));
+    }
+    @media (max-width: 511px) {
+      font-size: 32px;
+      left: calc(30% - (250px / 2));
+    }
+    @media (max-width: 447px) {
+      font-size: 40px;
+      width: 100%;
+      left: 10px;
+    }
+  }
+
+  h2 {
+    z-index: 1;
+    position: fixed;
+    top: calc(50vh - (300px / 2));
+    left: calc(30% - (400px / 2));
+    font-size: 75px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
+
+    @media (max-width: 1110px) {
+      font-size: 60px;
+    }
+    @media (max-width: 816px) {
+      font-size: 50px;
+      left: calc(30% - (300px / 2));
+    }
+    @media (max-width: 692px) {
+      font-size: 40px;
+      left: calc(30% - (200px / 2));
+    }
+    @media (max-width: 568px) {
+      font-size: 35px;
+    }
+    @media (max-width: 511px) {
+      font-size: 32px;
+      left: calc(30% - (180px / 2));
+    }
+    @media (max-width: 447px) {;
+      font-size: 30px;
+      margin-top: 20px;
+      left: calc(30% - (190px / 2));
+    }
+    @media (max-width: 378px) {;
+      font-size: 28px;
+      margin-top: 20px;
+      left: 10px;
+    }
+  }
+
+  .desc {
+    z-index: 1;
+    position: fixed;
+    width: 60%;
+    top: calc(50vh - (50px / 2));;
+    left: calc(50% - (50% / 2));
+    font-size: 30px;
+    text-align: center;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
+    @media (max-width: 1110px) {
+      font-size: 25px;
+    }
+    @media (max-width: 816px) {
+      width: 70%;
+      left: calc(50% - (70% / 2));
+    }
+    @media (max-width: 568px) {
+      width: 80%;
+      left: calc(50% - (80% / 2));
+    }
+    @media (max-width: 511px) {
+      width: 90%;
+      left: calc(50% - (90% / 2));
+    }
+  }
+
+  .location {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 20px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
+    @media (max-width: 533px) {
+      font-size: 18px;
+    }
+    @media (max-width: 500px) {
+      font-size: 15px;
+      right: 170px;
+    }
+    @media (max-width: 430px) {
+      font-size: 12px;
+      left: 5%;
+    }
+  }
+
+  .dispo {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 20px;
+    border: 1px solid $fontColor;
+    border-radius: 50px;
+    padding: 10px 10px 10px 35px;
+    cursor: url("../../public/noun-text-cursor-49673.svg"), text;
+    @media (max-width: 533px) {
+      font-size: 16px;
+    }
+    @media (max-width: 500px) {
+      font-size: 13px;
+    }
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
+
+    span:before {
+      position: absolute;
+      background: hsl(135, 85%, 55%);
+      content: "";
+      left: 15px;
+      top: 14px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      animation: infinite pulse 2s;
+      @media (max-width: 500px) {
+        font-size: 13px;
+        top: 10px;
+      }
+    }
+
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 hsla(135, 85%, 55%, .1);
+    }
+    50% {
+      box-shadow: 0 0 0 0.8rem hsla(135, 85%, 55%, .2);
+    }
+    100% {
+      box-shadow: 0 0 0 0 hsla(135, 85%, 55%, .1);
+    }
+
+  }
+
+}
+
+// remove spline for mobile ( lag ).
+.spline {
+  @media (max-width: 816px) {
+    display: none;
+  }
+}
