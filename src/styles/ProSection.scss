@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid $blueColor;
   flex-direction: column;
+  background: linear-gradient(180deg, rgba(0, 238, 255, 1) 0%, rgba(56, 142, 149, 1) 0%, rgba(18, 121, 133, 1) 14%, rgba(31, 36, 45, 1) 100%);
 
   h2 {
     position: absolute;
@@ -18,6 +18,10 @@
     height: 100px;
     margin-top: -200px;
 
+    @media (max-width: 380px) {
+      margin-top: -100px;
+    }
+
     input[type="checkbox"] {
       display: none;
     }
@@ -29,11 +33,15 @@
       border-radius: 25px;
       cursor: pointer;
       height: fit-content;
+      @media (max-width: 660px) {
+        padding: 10px 20px;
+      }
     }
 
     input[type="checkbox"]:checked + label {
       background-color: $blueColor;
       color: $blackColor;
+      border: 1px solid $blackColor;
     }
   }
 
@@ -44,16 +52,33 @@
     width: 70%;
     justify-items: center;
     row-gap: 50px;
+    @media (max-width: 894px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 470px) {
+      row-gap: 25px;
+    }
 
     .element {
       position: relative;
       width: 200px;
       height: 200px;
+      @media (max-width: 660px) {
+        width: 150px;
+        height: 150px;
+      }
+
+      @media (max-width: 440px) {
+        width: 100px;
+        height: 100px;
+      }
 
       .proImage {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 15px;
+
       }
 
       &:hover::before {
@@ -62,6 +87,15 @@
         height: 190px;
         position: absolute;
         border: 5px solid $blueColor;
+        border-radius: 15px;
+        @media (max-width: 660px) {
+          width: 140px;
+          height: 140px;
+        }
+        @media (max-width: 440px) {
+          width: 90px;
+          height: 90px;
+        }
       }
 
       .infosPro {
@@ -79,6 +113,34 @@
         transition: opacity 0.5s;
         background: rgba(31, 36, 45, 0.4);
         backdrop-filter: blur(3px); /*effet derriere l'élément, ici un blur*/
+        border-radius: 15px;
+        @media (max-width: 660px) {
+          width: 140px;
+          height: 140px;
+        }
+        @media (max-width: 440px) {
+          width: 90px;
+          height: 90px;
+        }
+
+        p {
+          text-align: center;
+          @media (max-width: 660px) {
+            font-size: 12px;
+          }
+          @media (max-width: 660px) {
+            font-size: 8px;
+          }
+        }
+
+        .title {
+          font-size: 24px;
+          margin-bottom: 10px;
+          @media (max-width: 660px) {
+            font-size: 16px;
+          }
+        }
+
       }
 
       &:hover .infosPro {
