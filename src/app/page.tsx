@@ -84,16 +84,15 @@ export default function Home() {
                     position: 'fixed',
                     top: `calc(50vh - 150px + ${offsetY / 2}px)`,
                     transform: `translate3d(0px, ${-offsetY / 2}px, 0px) scale(${scale})`,
-                }}>Développeur Web Junior.</h2>
+                }}>Développeur Web junior.</h2>
                 <p className={'desc'} style={{
                     position: 'fixed',
                     top: `calc(50vh - 25px + ${offsetY / 2}px)`,
                     transform: `translate3d(0px, ${-offsetY / 2}px, 0px) scale(${scale})`,
-                }}> Je développe des sites web et des applications mobiles accessibles,
-                    performants
-                    et personnalisés de A à Z.</p>
+                }}> Je développe des sites web et des applications mobiles accessibles, performants et personnalisés de
+                    A à Z.</p>
                 <p className={'location'}>Belgique Liège : {date}</p>
-                <p className={'dispo'}><span>&nbsp;</span> disponible </p>
+                <p className={'dispo'}><span>&nbsp;</span> Disponible </p>
 
             </section>
 

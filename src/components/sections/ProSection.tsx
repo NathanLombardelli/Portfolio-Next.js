@@ -46,7 +46,7 @@ export function ProSection() {
                     className={'proImage'} src={npmImage} alt={'image du projet BeReact-ui'}/>
                     <div className={'infosPro'}>
                         <p className={'title'}>BeReact-ui</p>
-                        <p>Une librairie de mes composants React.</p>
+                        <p>Une bibliothèque de mes composants React.</p>
                         <p>( En cours )</p>
                     </div>
                 </a>
@@ -56,7 +56,7 @@ export function ProSection() {
                     className={'proImage'} src={drinkImage} alt={'image du projet DrinkSaver'}/>
                     <div className={'infosPro'}>
                         <p className={'title'}>DrinkSaver</p>
-                        <p>Une application mobile de référencement de bars/café et de prix de produits.</p>
+                        <p>Une application mobile de référencement des bars/cafés et des prix des produits.</p>
                         <p>( En cours )</p>
                     </div>
                 </a>
@@ -66,7 +66,7 @@ export function ProSection() {
                     className={'proImage'} src={portfolioImage} alt={'image du projet Portfolio'}/>
                     <div className={'infosPro'}>
                         <p className={'title'}>Portfolio</p>
-                        <p>Le site sur lequel vous vous trouver actuelement.</p>
+                        <p>Le site sur lequel vous vous trouvez actuellement.</p>
                     </div>
                 </a>
                 <a href={'https://github.com/NathanLombardelli'}

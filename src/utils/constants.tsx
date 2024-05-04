@@ -35,7 +35,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
+        desc: "Bachelier en Développement d'applications à l'Helmo Campus Guillemin à Liège.",
         year: "2019",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"
@@ -44,7 +44,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
+        desc: "Bachelier en Développement d'applications à l'Helmo Campus Guillemin à Liège.",
         year: "2020",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"
@@ -53,7 +53,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
+        desc: "Bachelier en Développement d'applications à l'Helmo Campus Guillemin à Liège.",
         year: "2021",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"
@@ -62,7 +62,7 @@ export const exp: expType[] = [
         title: "Étudiant Bachelier Développement d'application",
         image: <Image src={helmoImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Helmo",
-        desc: "Bachelier Développement d'application à l'Helmo Campus Guillemin à liège",
+        desc: "Bachelier en Développement d'applications à l'Helmo Campus Guillemin à Liège.",
         year: "2022",
         comp: "Java, C#, SQL",
         date: "Septembre 2019 - Janvier 2023"
@@ -71,7 +71,7 @@ export const exp: expType[] = [
         title: "Formation Développeur Web",
         image: <Image src={becodeImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "BeCode",
-        desc: "Préparation de présentations technologiques,participation à des projets de groupes etapprentisage de technologies du web.",
+        desc: "Préparation de présentations technologiques, participation à des projets de groupe et apprentissage de technologies du web.",
         year: "2023",
         comp: "JavaScript, TypeScript, React, ReactNative, SQL, Api,Docker, GitHub, HTML, CSS, SCSS,...",
         date: "16 MARS 2023 - 04 DECEMBRE 2023"
@@ -80,7 +80,7 @@ export const exp: expType[] = [
         title: "Stagiaire Développeur Web Junior",
         image: <Image src={capsuleImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Capsule Corp",
-        desc: "Participation au développement de l'application HomieApp ( SAAS de gestion immobilière : https://www.homieapp.be )",
+        desc: "Participation au développement de l'application HomieApp (SaaS de gestion immobilière : https://www.homieapp.be )",
         year: "2023",
         comp: "Ionic, React, Redux Toolkit, TypeScript, SQL, HTML,SCSS,...",
         date: "11 DÉCEMBRE 2023 - 04 MARS 2024"
@@ -89,7 +89,7 @@ export const exp: expType[] = [
         title: "Stagiaire Développeur Web Junior",
         image: <Image src={capsuleImage} alt={"Helmo Icon"} className={'imageInfos'}/>,
         location: "Capsule Corp",
-        desc: "Participation au développement de l'application HomieApp ( SAAS de gestion immobilière : https://www.homieapp.be )",
+        desc: "Participation au développement de l'application HomieApp (SaaS de gestion immobilière  https://www.homieapp.be )",
         year: "2024",
         comp: "Ionic, React, Redux Toolkit, TypeScript, SQL, HTML,SCSS,...",
         date: "11 DÉCEMBRE 2023 - 04 MARS 2024"
