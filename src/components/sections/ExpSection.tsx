@@ -56,7 +56,7 @@ export function ExpSection() {
 
     return (
         <section className={"expSection"} id={'exp'}>
-
+            <h2>Mon Expérience</h2>
             <div className={`infoContainer ${showInfosAnimation ? 'fadeOut' : 'fadeIn'}`}>
                 {selectedExp.image}
                 <div className={'textInfos'}>

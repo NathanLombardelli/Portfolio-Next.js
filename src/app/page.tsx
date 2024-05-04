@@ -17,6 +17,7 @@ import {CompSection} from "@/components/sections/CompSection";
 import {CvSection} from "@/components/sections/CvSection";
 import {ExpSection} from "@/components/sections/ExpSection";
 import {ProSection} from "@/components/sections/ProSection";
+import {ContactSection} from "@/components/sections/ContactSection";
 
 
 export default function Home() {
@@ -105,9 +106,7 @@ export default function Home() {
 
             <CvSection/>
 
-            <section className={"contactSection"} id={'contact'}>
-
-            </section>
+            <ContactSection/>
 
         </main>
     );

@@ -4,6 +4,13 @@
   align-items: center;
   flex-direction: column;
 
+  h2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+  }
+
   .infoContainer {
     margin-bottom: 100px;
     display: flex;
