@@ -4,4 +4,19 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, rgba(0, 238, 255, 1) 0%, rgba(56, 142, 149, 1) 0%, rgba(18, 121, 133, 1) 14%, rgba(31, 36, 45, 1) 100%);
+
+  h2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+  }
+
+  h3 {
+    a {
+      text-decoration: none;
+      color: $fontColor;
+    }
+  }
+
 }
